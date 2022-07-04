@@ -7,7 +7,9 @@ body {
     color: white;
     min-height: 100vh;
 }
-
+#root {
+    height: 100%;
+}
 .nav-panel {
     width: 300px;
     background-color: #163838;
@@ -37,10 +39,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 100%;
 
     .welcome {
         height: 100%;
-        display: flex;
         justify-content: center;
         align-items: center;
     }
