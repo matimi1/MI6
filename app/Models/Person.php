@@ -21,10 +21,10 @@ class Person extends Model
 
     public function images()
     {
-        return $this->hasOne(Image::class);
+        return $this->belongsTo(Image::class);
     }
     public function statuses()
     {
-        return $this->hasMany(Status::class);
+        return $this->belongsTo(Status::class);
     }
 }
