@@ -38,6 +38,7 @@ mix
     // add versioning
     .version();
 mix.sass("resources/css/style.scss", "public/css");
+mix.js("resources/js/app.js", "public/js").react();
 
 // ADD ASSETS TO COMPILE HERE:
 
