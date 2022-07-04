@@ -15,13 +15,21 @@ export default function App() {
     return data == null ? (
         <h1>Loading...</h1>
     ) : (
-        <div className="welcome">
+        <div style={{ margin: "3em" }}>
             <h1>Welcome to People of Interest REACT side</h1>
             {data.map((person, i) => {
                 return (
-                    <p key={i}>
-                        {person.name} is {person.occupation}
-                    </p>
+                    <>
+                        <p key={i}>
+                            {person.name} is {person.occupation}
+                        </p>
+                        <p>Known aliases:</p>
+                        <ul>
+                            {person.aliases.map((alias) => {
+                                return <li key={alias.id}>{alias.alias}</li>;
+                            })}
+                        </ul>
+                    </>
                 );
             })}
         </div>
