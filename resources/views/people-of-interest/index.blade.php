@@ -3,7 +3,7 @@
  @section('content')
  
     <div class="welcome">
-        <h1>Welcome to MI6</h1>
+        <h1>People of interest</h1>
     </div>
 
 @endsection

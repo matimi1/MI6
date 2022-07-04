@@ -37,6 +37,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    .welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .nav-control {
