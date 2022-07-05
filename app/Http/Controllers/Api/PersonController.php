@@ -11,6 +11,14 @@ class PersonController extends Controller
     public function index()
     {
         $people = Person::with('aliases')->get();
+
+        return $people;
+    }
+
+    public function getSelected($status)
+    {
+        $people = Person::with('aliases')->where('status_id', '=', $status)->get();
+
         return $people;
     }
 }
