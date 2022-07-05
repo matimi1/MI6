@@ -32,9 +32,7 @@ const StatusFilter = ({ selected_status, setSelected_status }) => {
                     <button
                         className={
                             "status-filter__status" +
-                            (selected_status == status.id
-                                ? "status-filter__status-selected"
-                                : "")
+                            (selected_status == status.id ? "-selected" : "")
                         }
                         data-status={status.id}
                         key={status.id}

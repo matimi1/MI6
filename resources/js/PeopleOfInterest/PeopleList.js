@@ -29,12 +29,12 @@ const PeopleList = ({ selected_status }) => {
                 </p>
                 <p>Known aliases:</p>
                 <ul>
-                    {person.aliases !== [] ? (
+                    {person.aliases.length > 0 ? (
                         person.aliases.map((alias) => {
                             return <li key={alias.id}>{alias.alias}</li>;
                         })
                     ) : (
-                        <p>Not found</p>
+                        <p>Not found for this person</p>
                     )}
                 </ul>
             </>

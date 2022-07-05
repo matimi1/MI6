@@ -73,3 +73,19 @@ body {
 .nav-panel.hidden .nav-control {
     left: 0;
 }
+
+.status-filter__status {
+    padding: 0.5em;
+    margin-right: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+.status-filter__status-selected {
+    padding: 0.5em;
+    margin-right: 1em;
+    cursor: pointer;
+    background-color: #163838;
+    color: white;
+    border: none;
+}
